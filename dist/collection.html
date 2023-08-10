@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script src="../dist/jquery-3.7.0.min.js"></script>
+		<!-- css -->
+		<link rel="stylesheet" href="./slick-1.8.1/slick/slick.css">
+		<link rel="stylesheet" href="./slick-1.8.1/slick/slick-theme.css">
+		<!-- <link rel="stylesheet" href="style.css"> -->
+		<!-- js -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+		<script src="./slick-1.8.1/slick/slick.js"></script>
+	<style>
+		.container {
+			width: 40%;
+			margin: 0 auto;
+			}
+			.btn
+			{
+			top: 0;
+			right: 0;
+			height: 25px;
+			width: 25px;
+			padding: 16px;
+			background:brown;
+			position: absolute;
+			display: flex;
+			justify-content: space-evenly;
+			align-items: center;
+			flex-direction: column;
+			cursor: pointer;
+			}
+
+			.btn .bar1, .btn .bar2, .btn .bar3
+			{
+			height: 4px;
+			width: 100%;
+			display: block;
+			background: #ffffff;
+			}
+			.close-btn
+			{
+			top: 0;
+			right: 0;
+			height: 15px;
+			width: 15px;
+			padding: 20px;
+			background: brown;
+			position: absolute;
+			display: flex;
+			justify-content: space-evenly;
+			/* 各アイテムを均等に配置し
+                                   各アイテムの周りに同じ大きさの間隔を置く */
+			align-items: center;
+			/* アイテムを中央付近にまとめる */
+			flex-direction: column;
+			/* 積み重なるように配置する */
+			
+			cursor: pointer;
+			}
+			.close-btn .bar1
+			{
+			transform: rotate(-130deg);
+			height: 4px;
+			width: 90%;
+			display: block;
+			background: #ffffff;
+			position: absolute;
+			}
+			.close-btn .bar2
+			{
+			display: none;
+			}
+			.close-btn .bar3
+			{
+			transform: rotateZ(130deg);
+			height: 4px;
+			width: 90%;
+			display: block;
+			background: #ffffff;
+			position: absolute;
+			}
+			.menu
+			{
+			display: none;
+			}
+			.open-menu
+			{
+			width: 100%;
+			background:brown;
+			display: flex;
+			align-items: center;
+			transition: 5s all;
+			}
+			.open-menu ul
+			{
+			display: flex;
+			justify-content: center;
+			align-items: start;
+			flex-direction: column;
+			}
+			.open-menu ul li
+			{
+			list-style: none;
+			padding: 6px;
+			}
+			.open-menu ul li a
+			{
+			text-decoration: none;
+			
+			font-size: 2vw;
+			font-weight: bold;
+			color: #ffffff;
+			}
+			.open-menu ul li a:hover
+			{
+			border-bottom: 2px solid #ffffff;
+			transition: 0.2s all;
+			}
+		.back_button a{
+		display: flex;
+		text-decoration: none;
+		background-color:brown;
+		width: 65px;
+		height: 40px;
+		margin: 50px;
+		color: #ffffff;
+		/* padding: 50px; */
+		align-items: center;
+		justify-content: space-evenly;
+		border-radius: 100vh;
+		
+	}
+	
+	.back_button a:hover{
+		color:silver;
+	}
+
+	.collection_box img{
+		width: 200px;
+		height: 150px;
+	}
+	li{
+		list-style: none;
+	}
+	
+	</style>
+</head>
+<body>
+	
+	<div class="back_button"><a href="../dist/app.html">←戻る</a></div>
+	<div class="container">
+		<div class="btn">
+		  <span class="bar1"></span>
+		  <span class="bar2"></span>
+		  <span class="bar3"></span>
+		</div>
+		<div class="menu">
+		  <ul>
+		    <li><a id="top" href="../dist/app.html">TOP</a></li>
+		    <li><a id="collection" href="../dist/collection.html">Colection</a></li>
+		    <li><a id="account" href="../dist/account.html">Account</a></li>
+		    <li><a id="address" href="../dist/address.html">Adress</a></li>
+		  </ul>
+		</div>
+	</div>
+	<div class="collection">
+		<div class="collection_box">
+			<ul>
+				<li><a href="../dist/purchase.html"><img src="../dist/img/cake-pops-693645_1280.jpeg" alt=""></a></li>
+				<li><a href="../dist/purchase.html"><img src="../dist/img/cake-1971552_1280.jpeg" alt=""></a></li>
+				<li><a href="../dist/purchase.html"><img src="../dist/img/cake-balls-4139982_1280.jpeg" alt=""></a></li>
+				<li><a href="../dist/purchase.html"><img src="../dist/img/chocolates-g51c45c37c_1280.jpg" alt=""></a></li>
+				<li><a href="../dist/purchase.html"><img src="../dist/img/macarons-2548827_1280.jpeg" alt=""></a></li>
+				<li><a href="../dist/purchase.html"><img src="../dist/img/valentines-day-2057745_1280.jpeg" alt=""></a></li>
+				
+				
+			</ul>
+			
+
+		</div>
+	</div>
+
+	<script src="app.js">
+		
+	</script>
+</body>
+</html>

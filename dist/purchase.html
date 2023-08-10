@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script src="../dist/jquery-3.7.0.min.js"></script>
+		<!-- css -->
+		<link rel="stylesheet" href="./slick-1.8.1/slick/slick.css">
+		<link rel="stylesheet" href="./slick-1.8.1/slick/slick-theme.css">
+		<!-- <link rel="stylesheet" href="style.css"> -->
+		<!-- js -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+		<script src="./slick-1.8.1/slick/slick.js"></script>
+		<!-- <script src="main.js"></script> -->
+</head>
+<style>
+	.title{
+		/* position: relative; */
+		text-align: center;
+	}
+	.title h1, .title small{
+		/* position: absolute; */
+		
+		margin: 5px auto;
+	}
+	.back_button a{
+		display: flex;
+		text-decoration: none;
+		background-color:brown;
+		width: 65px;
+		height: 40px;
+		margin: 50px;
+		color: #ffffff;
+		/* padding: 50px; */
+		align-items: center;
+		justify-content: space-evenly;
+		border-radius: 100vh;
+		
+	}
+	
+	.back_button a:hover{
+		color:silver;
+	}
+
+	.collection_box img{
+		width: 200px;
+		height: 150px;
+	}
+	.open_purchase_decision .purchase_button{
+		position: absolute;
+		display: flex;
+		text-decoration: none;
+		background-color:aquamarine;
+		width: 65px;
+		height: 40px;
+		top: 300px;
+		right:400px;
+
+		color: #000000;
+		/* padding: 50px; */
+		align-items: center;
+		justify-content: space-evenly;
+		border-radius: 100vh;
+		
+
+	}
+
+	.open_purchase_decision img{
+		position: absolute;
+		width: 100px;
+		height: 75px;
+		top: 300px;
+		margin: 0 700px;
+	}
+	.purchase_decision{
+		display: none;
+	}
+
+</style>
+<body>
+	<div class="back_button"><a href="../dist/app.html">←戻る</a></div>
+	<div class="title">
+		<h1>Chocolate Shop</h1>
+		<small>purchace page</small>
+	</div>
+	<div id="collection_box" class="collection_box">
+		<img src="../dist/img/cake-pops-693645_1280.jpeg" alt="">
+	</div>
+	<!-- <div id="purchase_decision" class="purchase_decision">
+		<img src="../dist/img/cake-pops-693645_1280.jpeg" alt="">
+		<div class="purchase_button"><a href="">購入</a></div>
+	</div> -->
+	<div>
+		<div class="purchase_decision" id="purchase_decision" >
+			<img src="../dist/img/cake-pops-693645_1280.jpeg" alt="" width="250px" height="150px">
+			<div class="purchace_title">この商品を購入しますか？</div>
+			<input type="submit">はい</input>
+		</div>
+	</div>
+
+	<script src="app.js"></script>
+</body>
+</html>
